@@ -49,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				041113BC29E78E07004E2603 /* OnboardingSlide.swift */,
-				041113BE29E79259004E2603 /* OnboardingCollectionViewCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -74,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				041113B529E77AFD004E2603 /* OnboardingViewController.swift */,
+				041113BE29E79259004E2603 /* OnboardingCollectionViewCell.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
