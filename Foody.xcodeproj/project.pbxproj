@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041113B629E77AFD004E2603 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041113B529E77AFD004E2603 /* OnboardingViewController.swift */; };
+		041113BB29E78CCC004E2603 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041113BA29E78CCC004E2603 /* UIView+Extension.swift */; };
+		041113BD29E78E07004E2603 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041113BC29E78E07004E2603 /* OnboardingSlide.swift */; };
+		041113BF29E79259004E2603 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041113BE29E79259004E2603 /* OnboardingCollectionViewCell.swift */; };
 		04B5104929E6662500D3F81E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5104829E6662500D3F81E /* AppDelegate.swift */; };
 		04B5104B29E6662500D3F81E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5104A29E6662500D3F81E /* SceneDelegate.swift */; };
-		04B5104D29E6662500D3F81E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5104C29E6662500D3F81E /* ViewController.swift */; };
 		04B5105029E6662500D3F81E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B5104E29E6662500D3F81E /* Main.storyboard */; };
 		04B5105329E6662600D3F81E /* Foody.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04B5105129E6662600D3F81E /* Foody.xcdatamodeld */; };
 		04B5105529E6662700D3F81E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B5105429E6662700D3F81E /* Assets.xcassets */; };
@@ -17,10 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041113B529E77AFD004E2603 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		041113BA29E78CCC004E2603 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		041113BC29E78E07004E2603 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		041113BE29E79259004E2603 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		04B5104529E6662500D3F81E /* Foody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foody.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B5104829E6662500D3F81E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04B5104A29E6662500D3F81E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04B5104C29E6662500D3F81E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04B5104F29E6662500D3F81E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04B5105229E6662600D3F81E /* Foody.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Foody.xcdatamodel; sourceTree = "<group>"; };
 		04B5105429E6662700D3F81E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +45,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041113B129E77A66004E2603 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				041113BC29E78E07004E2603 /* OnboardingSlide.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		041113B229E77A74004E2603 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				041113B429E77AB1004E2603 /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		041113B329E77A7F004E2603 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				041113B729E77FD9004E2603 /* CollectionViewCells */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		041113B429E77AB1004E2603 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				041113B529E77AFD004E2603 /* OnboardingViewController.swift */,
+				041113BE29E79259004E2603 /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		041113B729E77FD9004E2603 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				041113B829E78006004E2603 /* CategoryCollectionViewCell */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		041113B829E78006004E2603 /* CategoryCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CategoryCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		041113B929E780A9004E2603 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				041113BA29E78CCC004E2603 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		04B5103C29E6662500D3F81E = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +120,12 @@
 		04B5104729E6662500D3F81E /* Foody */ = {
 			isa = PBXGroup;
 			children = (
+				041113B929E780A9004E2603 /* Extensions */,
+				041113B329E77A7F004E2603 /* CustomViews */,
+				041113B229E77A74004E2603 /* Views */,
+				041113B129E77A66004E2603 /* Models */,
 				04B5104829E6662500D3F81E /* AppDelegate.swift */,
 				04B5104A29E6662500D3F81E /* SceneDelegate.swift */,
-				04B5104C29E6662500D3F81E /* ViewController.swift */,
 				04B5104E29E6662500D3F81E /* Main.storyboard */,
 				04B5105429E6662700D3F81E /* Assets.xcassets */,
 				04B5105629E6662700D3F81E /* LaunchScreen.storyboard */,
@@ -141,9 +206,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04B5104D29E6662500D3F81E /* ViewController.swift in Sources */,
 				04B5104929E6662500D3F81E /* AppDelegate.swift in Sources */,
+				041113B629E77AFD004E2603 /* OnboardingViewController.swift in Sources */,
 				04B5104B29E6662500D3F81E /* SceneDelegate.swift in Sources */,
+				041113BB29E78CCC004E2603 /* UIView+Extension.swift in Sources */,
+				041113BD29E78E07004E2603 /* OnboardingSlide.swift in Sources */,
+				041113BF29E79259004E2603 /* OnboardingCollectionViewCell.swift in Sources */,
 				04B5105329E6662600D3F81E /* Foody.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
