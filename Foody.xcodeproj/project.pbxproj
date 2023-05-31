@@ -11,10 +11,12 @@
 		041113BB29E78CCC004E2603 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041113BA29E78CCC004E2603 /* UIView+Extension.swift */; };
 		041113BD29E78E07004E2603 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041113BC29E78E07004E2603 /* OnboardingSlide.swift */; };
 		041113BF29E79259004E2603 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041113BE29E79259004E2603 /* OnboardingCollectionViewCell.swift */; };
+		045740282A27744200696F87 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045740272A27744200696F87 /* CardView.swift */; };
 		049A187C2A2626CA00E3554E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A187B2A2626CA00E3554E /* HomeViewController.swift */; };
 		04A84EB62A27278000F00F2E /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A84EB42A27278000F00F2E /* CategoryCollectionViewCell.swift */; };
 		04A84EB72A27278000F00F2E /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A84EB52A27278000F00F2E /* CategoryCollectionViewCell.xib */; };
 		04A84EB92A2729E000F00F2E /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A84EB82A2729E000F00F2E /* DishCategory.swift */; };
+		04A84EBB2A27306000F00F2E /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A84EBA2A27306000F00F2E /* String+Extension.swift */; };
 		04B5104929E6662500D3F81E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5104829E6662500D3F81E /* AppDelegate.swift */; };
 		04B5104B29E6662500D3F81E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5104A29E6662500D3F81E /* SceneDelegate.swift */; };
 		04B5105029E6662500D3F81E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B5104E29E6662500D3F81E /* Main.storyboard */; };
@@ -29,10 +31,12 @@
 		041113BA29E78CCC004E2603 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		041113BC29E78E07004E2603 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		041113BE29E79259004E2603 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		045740272A27744200696F87 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		049A187B2A2626CA00E3554E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		04A84EB42A27278000F00F2E /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		04A84EB52A27278000F00F2E /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		04A84EB82A2729E000F00F2E /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
+		04A84EBA2A27306000F00F2E /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		04B5104529E6662500D3F81E /* Foody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foody.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B5104829E6662500D3F81E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04B5104A29E6662500D3F81E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +83,7 @@
 		041113B329E77A7F004E2603 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				045740262A27741600696F87 /* CardView */,
 				04A84EB22A2726F500F00F2E /* CollectionViewCells */,
 			);
 			path = CustomViews;
@@ -97,8 +102,17 @@
 			isa = PBXGroup;
 			children = (
 				041113BA29E78CCC004E2603 /* UIView+Extension.swift */,
+				04A84EBA2A27306000F00F2E /* String+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		045740262A27741600696F87 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				045740272A27744200696F87 /* CardView.swift */,
+			);
+			path = CardView;
 			sourceTree = "<group>";
 		};
 		049A187A2A26267100E3554E /* Home */ = {
@@ -176,7 +190,6 @@
 				33F7B2EEFCECEE38AFEE0E32 /* Pods-Foody.debug.xcconfig */,
 				F5533367AB06044762D667EC /* Pods-Foody.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -297,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B5104929E6662500D3F81E /* AppDelegate.swift in Sources */,
+				04A84EBB2A27306000F00F2E /* String+Extension.swift in Sources */,
 				04A84EB92A2729E000F00F2E /* DishCategory.swift in Sources */,
 				041113B629E77AFD004E2603 /* OnboardingViewController.swift in Sources */,
 				04B5104B29E6662500D3F81E /* SceneDelegate.swift in Sources */,
@@ -305,6 +319,7 @@
 				041113BB29E78CCC004E2603 /* UIView+Extension.swift in Sources */,
 				041113BD29E78E07004E2603 /* OnboardingSlide.swift in Sources */,
 				041113BF29E79259004E2603 /* OnboardingCollectionViewCell.swift in Sources */,
+				045740282A27744200696F87 /* CardView.swift in Sources */,
 				04B5105329E6662600D3F81E /* Foody.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
