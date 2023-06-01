@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040353E52A28F6D500FFC16A /* DishPortraitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040353E32A28F6D500FFC16A /* DishPortraitCollectionViewCell.swift */; };
+		040353E62A28F6D500FFC16A /* DishPortraitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040353E42A28F6D500FFC16A /* DishPortraitCollectionViewCell.xib */; };
+		040353E82A293B4900FFC16A /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040353E72A293B4900FFC16A /* Dish.swift */; };
 		041113B629E77AFD004E2603 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041113B529E77AFD004E2603 /* OnboardingViewController.swift */; };
 		041113BB29E78CCC004E2603 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041113BA29E78CCC004E2603 /* UIView+Extension.swift */; };
 		041113BD29E78E07004E2603 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041113BC29E78E07004E2603 /* OnboardingSlide.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040353E32A28F6D500FFC16A /* DishPortraitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishPortraitCollectionViewCell.swift; sourceTree = "<group>"; };
+		040353E42A28F6D500FFC16A /* DishPortraitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishPortraitCollectionViewCell.xib; sourceTree = "<group>"; };
+		040353E72A293B4900FFC16A /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		041113B529E77AFD004E2603 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		041113BA29E78CCC004E2603 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		041113BC29E78E07004E2603 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
@@ -62,11 +68,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040353E22A28F69300FFC16A /* DishPortraitCollection */ = {
+			isa = PBXGroup;
+			children = (
+				040353E32A28F6D500FFC16A /* DishPortraitCollectionViewCell.swift */,
+				040353E42A28F6D500FFC16A /* DishPortraitCollectionViewCell.xib */,
+			);
+			path = DishPortraitCollection;
+			sourceTree = "<group>";
+		};
 		041113B129E77A66004E2603 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				041113BC29E78E07004E2603 /* OnboardingSlide.swift */,
 				04A84EB82A2729E000F00F2E /* DishCategory.swift */,
+				040353E72A293B4900FFC16A /* Dish.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -83,6 +99,7 @@
 		041113B329E77A7F004E2603 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				040353E22A28F69300FFC16A /* DishPortraitCollection */,
 				045740262A27741600696F87 /* CardView */,
 				04A84EB22A2726F500F00F2E /* CollectionViewCells */,
 			);
@@ -255,6 +272,7 @@
 			files = (
 				04A84EB72A27278000F00F2E /* CategoryCollectionViewCell.xib in Resources */,
 				04B5105829E6662700D3F81E /* LaunchScreen.storyboard in Resources */,
+				040353E62A28F6D500FFC16A /* DishPortraitCollectionViewCell.xib in Resources */,
 				04B5105529E6662700D3F81E /* Assets.xcassets in Resources */,
 				04B5105029E6662500D3F81E /* Main.storyboard in Resources */,
 			);
@@ -315,8 +333,10 @@
 				041113B629E77AFD004E2603 /* OnboardingViewController.swift in Sources */,
 				04B5104B29E6662500D3F81E /* SceneDelegate.swift in Sources */,
 				049A187C2A2626CA00E3554E /* HomeViewController.swift in Sources */,
+				040353E52A28F6D500FFC16A /* DishPortraitCollectionViewCell.swift in Sources */,
 				04A84EB62A27278000F00F2E /* CategoryCollectionViewCell.swift in Sources */,
 				041113BB29E78CCC004E2603 /* UIView+Extension.swift in Sources */,
+				040353E82A293B4900FFC16A /* Dish.swift in Sources */,
 				041113BD29E78E07004E2603 /* OnboardingSlide.swift in Sources */,
 				041113BF29E79259004E2603 /* OnboardingCollectionViewCell.swift in Sources */,
 				045740282A27744200696F87 /* CardView.swift in Sources */,
