@@ -17,6 +17,7 @@
 		045740282A27744200696F87 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045740272A27744200696F87 /* CardView.swift */; };
 		048AA2E52A29D66C0052181F /* DishLandScapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048AA2E32A29D66C0052181F /* DishLandScapeCollectionViewCell.swift */; };
 		048AA2E62A29D66C0052181F /* DishLandScapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048AA2E42A29D66C0052181F /* DishLandScapeCollectionViewCell.xib */; };
+		049848602A2DEA52004AD938 /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498485F2A2DEA52004AD938 /* DishDetailViewController.swift */; };
 		049A187C2A2626CA00E3554E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A187B2A2626CA00E3554E /* HomeViewController.swift */; };
 		04A84EB62A27278000F00F2E /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A84EB42A27278000F00F2E /* CategoryCollectionViewCell.swift */; };
 		04A84EB72A27278000F00F2E /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A84EB52A27278000F00F2E /* CategoryCollectionViewCell.xib */; };
@@ -42,6 +43,7 @@
 		045740272A27744200696F87 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		048AA2E32A29D66C0052181F /* DishLandScapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishLandScapeCollectionViewCell.swift; sourceTree = "<group>"; };
 		048AA2E42A29D66C0052181F /* DishLandScapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishLandScapeCollectionViewCell.xib; sourceTree = "<group>"; };
+		0498485F2A2DEA52004AD938 /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
 		049A187B2A2626CA00E3554E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		04A84EB42A27278000F00F2E /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		04A84EB52A27278000F00F2E /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		041113B229E77A74004E2603 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0498485E2A2DEA21004AD938 /* DishDetail */,
 				049A187A2A26267100E3554E /* Home */,
 				041113B429E77AB1004E2603 /* Onboarding */,
 			);
@@ -142,6 +145,14 @@
 				048AA2E42A29D66C0052181F /* DishLandScapeCollectionViewCell.xib */,
 			);
 			path = DishLandScapeCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		0498485E2A2DEA21004AD938 /* DishDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0498485F2A2DEA52004AD938 /* DishDetailViewController.swift */,
+			);
+			path = DishDetail;
 			sourceTree = "<group>";
 		};
 		049A187A2A26267100E3554E /* Home */ = {
@@ -345,6 +356,7 @@
 				04B5104929E6662500D3F81E /* AppDelegate.swift in Sources */,
 				04A84EBB2A27306000F00F2E /* String+Extension.swift in Sources */,
 				04A84EB92A2729E000F00F2E /* DishCategory.swift in Sources */,
+				049848602A2DEA52004AD938 /* DishDetailViewController.swift in Sources */,
 				041113B629E77AFD004E2603 /* OnboardingViewController.swift in Sources */,
 				04B5104B29E6662500D3F81E /* SceneDelegate.swift in Sources */,
 				049A187C2A2626CA00E3554E /* HomeViewController.swift in Sources */,
