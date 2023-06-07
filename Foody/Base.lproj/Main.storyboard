@@ -132,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="54" y="42"/>
+            <point key="canvasLocation" x="-7" y="42"/>
         </scene>
         <!--Foody-->
         <scene sceneID="qOC-le-p6v">
@@ -310,7 +310,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jCH-a2-RJs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1988.5496183206105" y="41.549295774647888"/>
+            <point key="canvasLocation" x="1608" y="42"/>
         </scene>
         <!--Dish Detail View Controller-->
         <scene sceneID="7hH-x0-Z82">
@@ -411,7 +411,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vza-D9-a2W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2800.7633587786258" y="50"/>
+            <point key="canvasLocation" x="2369" y="42"/>
+        </scene>
+        <!--List Dishes View Controller-->
+        <scene sceneID="CU5-vB-rjf">
+            <objects>
+                <viewController storyboardIdentifier="ListDishesViewController" id="oqq-5H-9ZI" customClass="ListDishesViewController" customModule="Foody" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JmC-a5-wo5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="y3V-Ld-rMK">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="oqq-5H-9ZI" id="90E-Dx-iur"/>
+                                    <outlet property="delegate" destination="oqq-5H-9ZI" id="9ZD-um-se5"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Stb-5Y-8IM"/>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="y3V-Ld-rMK" firstAttribute="top" secondItem="Stb-5Y-8IM" secondAttribute="top" id="CmL-AQ-tVV"/>
+                            <constraint firstItem="y3V-Ld-rMK" firstAttribute="leading" secondItem="Stb-5Y-8IM" secondAttribute="leading" id="YBd-6J-5QF"/>
+                            <constraint firstAttribute="bottom" secondItem="y3V-Ld-rMK" secondAttribute="bottom" id="h1R-EC-VxW"/>
+                            <constraint firstItem="y3V-Ld-rMK" firstAttribute="trailing" secondItem="Stb-5Y-8IM" secondAttribute="trailing" id="mlD-4A-Svn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="y3V-Ld-rMK" id="51f-CM-mNn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IHL-kS-Zie" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3159.5419847328244" y="59.859154929577471"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bdB-p6-Wif">
@@ -429,7 +463,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xyu-S3-OYF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1061.8320610687022" y="41.549295774647888"/>
+            <point key="canvasLocation" x="818" y="42"/>
         </scene>
     </scenes>
     <resources>

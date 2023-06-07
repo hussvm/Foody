@@ -8,7 +8,7 @@
 import UIKit
 
 class OnboardingViewController: UIViewController {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var pageControl: UIPageControl!
@@ -26,7 +26,7 @@ class OnboardingViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         slides = [ .init(title: "Our Delivry", descrption: "WE Dliver Fast", image: UIImage(named: "deli")!),
                    .init(title: "Our Food", descrption: "Enjoy Your Meal", image: UIImage(named: "Yumm")!)
         ]
@@ -44,7 +44,7 @@ class OnboardingViewController: UIViewController {
             controller.modalPresentationStyle = .fullScreen
             
             present(controller, animated: true, completion: nil)
-
+            
         } else {
             currentPage += 1
             let indexPath = IndexPath(item: currentPage, section: 0)
