@@ -298,8 +298,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Foody" id="5xt-vo-UVv">
+                        <barButtonItem key="backBarButtonItem" title=" " id="3AS-i2-ydI"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="cart.fill" catalog="system" id="doK-zq-kUW">
                             <color key="tintColor" systemColor="systemYellowColor"/>
+                            <connections>
+                                <segue destination="WZh-dc-Edc" kind="show" id="e3f-pZ-pBZ"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -464,6 +468,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xyu-S3-OYF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="818" y="42"/>
+        </scene>
+        <!--List Orders View Controller-->
+        <scene sceneID="9aA-mi-Ne8">
+            <objects>
+                <viewController storyboardIdentifier="ListOrdersViewController" id="WZh-dc-Edc" customClass="ListOrdersViewController" customModule="Foody" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D1d-1R-g6q">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VLf-rQ-L1F">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="WZh-dc-Edc" id="V7m-1P-nhn"/>
+                                    <outlet property="delegate" destination="WZh-dc-Edc" id="vuZ-LV-VdN"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cDQ-um-sVP"/>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="VLf-rQ-L1F" firstAttribute="trailing" secondItem="cDQ-um-sVP" secondAttribute="trailing" id="2EG-Np-Fbp"/>
+                            <constraint firstItem="VLf-rQ-L1F" firstAttribute="top" secondItem="cDQ-um-sVP" secondAttribute="top" id="47B-lZ-p87"/>
+                            <constraint firstAttribute="bottom" secondItem="VLf-rQ-L1F" secondAttribute="bottom" id="8hi-Kr-pFp"/>
+                            <constraint firstItem="VLf-rQ-L1F" firstAttribute="leading" secondItem="cDQ-um-sVP" secondAttribute="leading" id="9qt-Gz-gZh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hkS-j5-Nl8"/>
+                    <connections>
+                        <outlet property="tableView" destination="VLf-rQ-L1F" id="ugc-iL-Nm9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mHw-kn-ops" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1606.8702290076335" y="815.49295774647896"/>
         </scene>
     </scenes>
     <resources>

@@ -15,6 +15,4 @@ struct Dish {
         return "\(calories ?? 0) Calories "
     }
     
-    
-
 }
