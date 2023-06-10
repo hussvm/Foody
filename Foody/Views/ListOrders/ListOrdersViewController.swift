@@ -12,9 +12,9 @@ class ListOrdersViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var orders: [Order] = [
-        .init(id: "id1", name: "Hussam", dish: .init(id: "id1", name: "Pizza", image: "https://picsum.photos/100/200", description: "The Best Food Ever !", calories: 20)),
-        .init(id: "id1", name: "KAZ", dish: .init(id: "id1", name: "Gorssa", image: "https://picsum.photos/100/200", description: "The Best Food Ever !", calories: 20)),
-        .init(id: "id1", name: "ALi", dish: .init(id: "id1", name: "T3mia", image: "https://picsum.photos/100/200", description: "The Best Food Ever !", calories: 20))
+        .init(id: "id1", name: "Hussam", dish: .init(id: "id1", name: "Pizza", image: "1", description: "The Best Food Ever !", calories: 200)),
+        .init(id: "id1", name: "KAZ", dish: .init(id: "id1", name: "Gorssa", image: "h2", description: "The Best Food Ever !", calories: 250)),
+        .init(id: "id1", name: "ALi", dish: .init(id: "id1", name: "Kebda", image: "3", description: "The Best Food Ever !", calories: 300))
     ]
     
     override func viewDidLoad() {

@@ -13,9 +13,9 @@ class ListDishesViewController: UIViewController {
     var category: DishCategory!
     
     var dishes: [Dish] = [
-        .init(id: "id1", name: "Pizza1", image: "https://picsum.photos/100/200", description: "The Best Food Ever !", calories: 20),
-        .init(id: "id1", name: "Pizza2", image: "https://picsum.photos/100/200", description: "The Best Food Ever !", calories: 200),
-        .init(id: "id1", name: "Pizza3", image: "https://picsum.photos/100/200", description: "The Best Food Ever ! ", calories: 2000),
+        .init(id: "id1", name: "Pizza", image: "1", description: "The Best Food Ever !", calories: 200),
+        .init(id: "id1", name: "Gorrsa", image: "2", description: "The Best Food Ever !", calories: 250),
+        .init(id: "id1", name: "Kebda", image: "3", description: "The Best Food Ever ! ", calories: 300),
     ]
     
     override func viewDidLoad() {

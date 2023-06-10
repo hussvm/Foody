@@ -14,22 +14,22 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var specailsCollectionView: UICollectionView!
     
     var categories: [DishCategory] = [
-        .init(id: "id1", name: "Gorasa 1", image: "https://picsum.photos/100/200"),
-        .init(id: "id2", name: "Gorasa 2", image: "https://picsum.photos/100/200"),
-        .init(id: "id3", name: "Gorasa 3", image: "https://picsum.photos/100/200"),
-        .init(id: "id4", name: "Gorasa 4", image: "https://picsum.photos/100/200"),
-        .init(id: "id5", name: "Gorasa 5", image: "https://picsum.photos/100/200")
+        .init(id: "id1", name: "Gorasa", image: "1"),
+        .init(id: "id2", name: "T3mia", image: "1"),
+        .init(id: "id3", name: "Pizza", image: "1"),
+        .init(id: "id4", name: "Kebda", image: "1"),
+        .init(id: "id5", name: "Shyaa", image: "1")
     ]
     
     var populars: [Dish] = [
-        .init(id: "id1", name: "Pizza1", image: "https://picsum.photos/100/200", description: "The Best Food Ever !", calories: 20),
-        .init(id: "id1", name: "Pizza2", image: "https://picsum.photos/100/200", description: "The Best Food Ever !", calories: 200),
-        .init(id: "id1", name: "Pizza3", image: "https://picsum.photos/100/200", description: "The Best Food Ever ! ", calories: 2000),
+        .init(id: "id1", name: "Pizza", image: "1", description: "The Best Food Ever !", calories: 200),
+        .init(id: "id1", name: "Gorssa", image: "1", description: "The Best Food Ever !", calories: 250),
+        .init(id: "id1", name: "Kebda", image: "1", description: "The Best Food Ever ! ", calories: 300),
     ]
     
     var specails: [Dish] = [
-        .init(id: "id1", name: "Pizza Lover", image: "https://picsum.photos/100/200", description: "The Best Food Ever !", calories: 20),
-        .init(id: "id1", name: "Pizza2", image: "https://picsum.photos/100/200", description: "The Best Food Ever !", calories: 200)
+        .init(id: "id1", name: "Pizza Lover", image: "1", description: "The Best Food Ever !", calories: 200),
+        .init(id: "id1", name: "Kebda Lover", image: "1", description: "The Best Food Ever !", calories: 300)
     ]
     
     
