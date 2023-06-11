@@ -17,9 +17,9 @@ class OnboardingViewController: UIViewController {
     var currentPage = 0 {
         didSet {
             pageControl.currentPage = currentPage
-            if currentPage == slides.count - 1{
+            if currentPage == slides.count - 1 {
                 nextButton.setTitle("Get Started", for: .normal)
-            }else {
+            } else {
                 nextButton.setTitle("Next", for: .normal)
             }
         }
@@ -27,7 +27,7 @@ class OnboardingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        slides = [ .init(title: "Our Delivry", descrption: "WE Dliver Fast", image: UIImage(named: "deli")!),
+        slides = [ .init(title: "Our Delivry", descrption: "WE Deliver Fast", image: UIImage(named: "deli")!),
                    .init(title: "Our Food", descrption: "Enjoy Your Meal", image: UIImage(named: "Yumm")!)
         ]
         pageControl.numberOfPages = slides.count
