@@ -14,11 +14,12 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var specailsCollectionView: UICollectionView!
     
     var categories: [DishCategory] = [
-        .init(id: "id1", name: "Gorasa", image: "1"),
-        .init(id: "id2", name: "T3mia", image: "1"),
+        .init(id: "id1", name: "Snacks", image: "1"),
+        .init(id: "id2", name: "Grills", image: "1"),
         .init(id: "id3", name: "Pizza", image: "1"),
-        .init(id: "id4", name: "Kebda", image: "1"),
-        .init(id: "id5", name: "Shyaa", image: "1")
+        .init(id: "id4", name: "Sudane", image: "1"),
+        .init(id: "id4", name: "Sea Food", image: "1"),
+        .init(id: "id5", name: "Vegetarian", image: "1")
     ]
     
     var populars: [Dish] = [
@@ -29,9 +30,9 @@ class HomeViewController: UIViewController {
     
     var specails: [Dish] = [
         .init(id: "id1", name: "Pizza Lover", image: "1", description: "The Best Food Ever !", calories: 200),
-        .init(id: "id1", name: "Kebda Lover", image: "1", description: "The Best Food Ever !", calories: 300)
+        .init(id: "id1", name: "Shyaa Lover", image: "1", description: "The Best Food Ever !", calories: 300),
+        .init(id: "id1", name: "Grilled Chicken", image: "1", description: "The Best Food Ever !", calories: 450)
     ]
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

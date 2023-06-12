@@ -14,6 +14,7 @@
 		041113BB29E78CCC004E2603 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041113BA29E78CCC004E2603 /* UIView+Extension.swift */; };
 		041113BD29E78E07004E2603 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041113BC29E78E07004E2603 /* OnboardingSlide.swift */; };
 		041113BF29E79259004E2603 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041113BE29E79259004E2603 /* OnboardingCollectionViewCell.swift */; };
+		041D55EE2A36F22B004B6AEE /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041D55ED2A36F22B004B6AEE /* ApiResponse.swift */; };
 		045740282A27744200696F87 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045740272A27744200696F87 /* CardView.swift */; };
 		046E6A3C2A361D7A00C84E6D /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046E6A3B2A361D7A00C84E6D /* AppError.swift */; };
 		04707EA22A31BC0000F9AE1E /* ListOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04707EA12A31BC0000F9AE1E /* ListOrdersViewController.swift */; };
@@ -50,6 +51,7 @@
 		041113BA29E78CCC004E2603 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		041113BC29E78E07004E2603 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		041113BE29E79259004E2603 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		041D55ED2A36F22B004B6AEE /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		045740272A27744200696F87 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		046E6A3B2A361D7A00C84E6D /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		04707EA12A31BC0000F9AE1E /* ListOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				048B4D532A350A7700B1EFC1 /* Route.swift */,
 				048B4D552A350BD100B1EFC1 /* Method.swift */,
 				046E6A3B2A361D7A00C84E6D /* AppError.swift */,
+				041D55ED2A36F22B004B6AEE /* ApiResponse.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				04B5104929E6662500D3F81E /* AppDelegate.swift in Sources */,
 				04A84EBB2A27306000F00F2E /* String+Extension.swift in Sources */,
 				04A84EB92A2729E000F00F2E /* DishCategory.swift in Sources */,
+				041D55EE2A36F22B004B6AEE /* ApiResponse.swift in Sources */,
 				049848602A2DEA52004AD938 /* DishDetailViewController.swift in Sources */,
 				04A1226F2A2F0C3F009A52EB /* UIViewController+Extension.swift in Sources */,
 				04707EA42A31BEFE00F9AE1E /* Order.swift in Sources */,
@@ -600,6 +604,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Foody/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Foody;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -634,6 +639,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Foody/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Foody;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
