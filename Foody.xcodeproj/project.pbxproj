@@ -19,6 +19,7 @@
 		046E6A3C2A361D7A00C84E6D /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046E6A3B2A361D7A00C84E6D /* AppError.swift */; };
 		04707EA22A31BC0000F9AE1E /* ListOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04707EA12A31BC0000F9AE1E /* ListOrdersViewController.swift */; };
 		04707EA42A31BEFE00F9AE1E /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04707EA32A31BEFE00F9AE1E /* Order.swift */; };
+		047CC5DD2A38ADD5000215B9 /* AllDihes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047CC5DC2A38ADD5000215B9 /* AllDihes.swift */; };
 		048AA2E52A29D66C0052181F /* DishLandScapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048AA2E32A29D66C0052181F /* DishLandScapeCollectionViewCell.swift */; };
 		048AA2E62A29D66C0052181F /* DishLandScapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048AA2E42A29D66C0052181F /* DishLandScapeCollectionViewCell.xib */; };
 		048B4D522A35093900B1EFC1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B4D512A35093900B1EFC1 /* NetworkService.swift */; };
@@ -56,6 +57,7 @@
 		046E6A3B2A361D7A00C84E6D /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		04707EA12A31BC0000F9AE1E /* ListOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewController.swift; sourceTree = "<group>"; };
 		04707EA32A31BEFE00F9AE1E /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		047CC5DC2A38ADD5000215B9 /* AllDihes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDihes.swift; sourceTree = "<group>"; };
 		048AA2E32A29D66C0052181F /* DishLandScapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishLandScapeCollectionViewCell.swift; sourceTree = "<group>"; };
 		048AA2E42A29D66C0052181F /* DishLandScapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishLandScapeCollectionViewCell.xib; sourceTree = "<group>"; };
 		048B4D512A35093900B1EFC1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -96,13 +98,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		040353E22A28F69300FFC16A /* DishPortraitCollectionViewCell */ = {
+		040353E22A28F69300FFC16A /* PopularDihesCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				040353E32A28F6D500FFC16A /* DishPortraitCollectionViewCell.swift */,
 				040353E42A28F6D500FFC16A /* DishPortraitCollectionViewCell.xib */,
 			);
-			path = DishPortraitCollectionViewCell;
+			path = PopularDihesCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		041113B129E77A66004E2603 /* Models */ = {
@@ -112,6 +114,7 @@
 				04A84EB82A2729E000F00F2E /* DishCategory.swift */,
 				040353E72A293B4900FFC16A /* Dish.swift */,
 				04707EA32A31BEFE00F9AE1E /* Order.swift */,
+				047CC5DC2A38ADD5000215B9 /* AllDihes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -185,13 +188,13 @@
 			path = ListOrders;
 			sourceTree = "<group>";
 		};
-		048AA2E22A29D5970052181F /* DishLandScapeCollectionViewCell */ = {
+		048AA2E22A29D5970052181F /* MostOrderedCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				048AA2E32A29D66C0052181F /* DishLandScapeCollectionViewCell.swift */,
 				048AA2E42A29D66C0052181F /* DishLandScapeCollectionViewCell.xib */,
 			);
-			path = DishLandScapeCollectionViewCell;
+			path = MostOrderedCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		0498485E2A2DEA21004AD938 /* DishDetail */ = {
@@ -213,8 +216,8 @@
 		04A84EB22A2726F500F00F2E /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				048AA2E22A29D5970052181F /* DishLandScapeCollectionViewCell */,
-				040353E22A28F69300FFC16A /* DishPortraitCollectionViewCell */,
+				048AA2E22A29D5970052181F /* MostOrderedCollectionViewCell */,
+				040353E22A28F69300FFC16A /* PopularDihesCollectionViewCell */,
 				04A84EB32A27273100F00F2E /* CategoryCollectionViewCell */,
 			);
 			path = CollectionViewCells;
@@ -446,6 +449,7 @@
 				040353E52A28F6D500FFC16A /* DishPortraitCollectionViewCell.swift in Sources */,
 				04A84EB62A27278000F00F2E /* CategoryCollectionViewCell.swift in Sources */,
 				046E6A3C2A361D7A00C84E6D /* AppError.swift in Sources */,
+				047CC5DD2A38ADD5000215B9 /* AllDihes.swift in Sources */,
 				041113BB29E78CCC004E2603 /* UIView+Extension.swift in Sources */,
 				040353E82A293B4900FFC16A /* Dish.swift in Sources */,
 				048AA2E52A29D66C0052181F /* DishLandScapeCollectionViewCell.swift in Sources */,

@@ -9,12 +9,22 @@ import Foundation
 
 struct NetworkService {
     
-    private func request<T: Codable> (route: Route,
+    static let shared = NetworkService()
+    
+    private init() {}
+    
+    func fetchAllCatgories(completion: @escaping(Result<AllDihes, Error>) -> Void)
+    {
+        request(route: .fetchAllCatgories, method: .get, completion: completion)
+    }
+
+    
+    private func request<T: Decodable> (route: Route,
                                       method: Method,
                                       paramters: [String: Any]? = nil,
-                                      compeltion: @escaping (Result<T, Error>) -> Void) {
+                                      completion: @escaping (Result<T, Error>) -> Void) {
         guard let request = createRequest(route: route, method: method, paramters: paramters)
-        else { compeltion(.failure(AppError.unkownError))
+        else { completion(.failure(AppError.unkownError))
             return }
         
         URLSession.shared.dataTask(with: request) { data,response,error in
@@ -29,16 +39,16 @@ struct NetworkService {
             }
             
             DispatchQueue.main.async {
-                self.handleResponse(result: result, compeltion: compeltion)
+                self.handleResponse(result: result, completion: completion)
             }
         } .resume()
     }
     
     
     private func handleResponse<T: Decodable>(result: Result<Data, Error>?,
-                                              compeltion: (Result<T, Error>)-> Void ) {
+                                              completion: (Result<T, Error>)-> Void ) {
         guard let result = result else {
-            compeltion(.failure(AppError.unkownError))
+            completion(.failure(AppError.unkownError))
             return
         }
         
@@ -46,23 +56,23 @@ struct NetworkService {
         case .success(let data):
             let decoder = JSONDecoder()
             guard let response = try?
-                    decoder.decode(ApiResponse<T>.self, from: data) else { compeltion(.failure(AppError.errorDecoding))
+                    decoder.decode(ApiResponse<T>.self, from: data) else { completion(.failure(AppError.errorDecoding))
                 return
             }
             
             if let error = response.error {
-                compeltion(.failure(AppError.serverError(error)))
+                completion(.failure(AppError.serverError(error)))
                 return
             }
             
             if let decodedData = response.data {
-                compeltion(.success(decodedData))
+                completion(.success(decodedData))
             } else {
-                compeltion(.failure(AppError.errorDecoding))
+                completion(.failure(AppError.errorDecoding))
             }
             
         case .failure(let error):
-            compeltion(.failure(error))
+            completion(.failure(error))
         }
     }
     

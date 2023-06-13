@@ -8,11 +8,13 @@
 import Foundation
 
 enum Route {
-    static let baseUrl = "Any Url From The Backend"
-    case temp
-    var description: String{
+    static let baseUrl = " Url For The Backend"
+    
+    case fetchAllCatgories
+    
+    var description: String {
         switch self {
-        case .temp: return "temp"
+        case .fetchAllCatgories: return "/ Location for catgories from backend"
         }
     }
 }
