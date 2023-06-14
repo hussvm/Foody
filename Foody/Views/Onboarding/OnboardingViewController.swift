@@ -42,7 +42,7 @@ class OnboardingViewController: UIViewController {
             
             controller.modalTransitionStyle = .flipHorizontal
             controller.modalPresentationStyle = .fullScreen
-            
+            UserDefaults.standard.hasOnboarded = true
             present(controller, animated: true, completion: nil)
             
         } else {
