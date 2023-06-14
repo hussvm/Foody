@@ -7,4 +7,5 @@ target 'Foody' do
 
   # Pods for Foody
     pod "Kingfisher"
+    pod "ProgressHUD"
 end

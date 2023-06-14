@@ -28,7 +28,21 @@ class DishDetailViewController: UIViewController {
         descriptionLabel.text = dish.description
         caloriesLabel.text = dish.formattedCalories
     }
-
+    
     @IBAction func orderButtonClicked(_ sender: UIButton) {
+        guard let name = nameField.text?.trimmingCharacters(in: .whitespaces), !name.isEmpty else {
+            nameField.placeholder = "Place Enter Your Name"
+            return
+        }
+        
+        NetworkService.shared.placeOrder(dishId: dish.id ?? "", name: name) {(result) in
+           
+            switch result {
+            case .success(_):
+                self.nameField.placeholder = "Your Order Has Been Recived :) "
+            case .failure(let error):
+                print("The Error is :\n\(error.localizedDescription)")
+            }
+        }
     }
 }
