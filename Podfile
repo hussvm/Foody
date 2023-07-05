@@ -7,5 +7,6 @@ target 'Foody' do
 
   # Pods for Foody
     pod "Kingfisher"
-    pod "ProgressHUD"
+    pod 'ProgressHUD'
+    pod 'IQKeyboardManager'
 end

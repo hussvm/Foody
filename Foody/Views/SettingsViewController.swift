@@ -15,11 +15,4 @@ class SettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    @IBAction func changeStatusClicked(_ sender: Any) {
-        if UserDefaults.standard.hasOnboarded {
-            print("Status has Changed")
-            UserDefaults.standard.hasOnboarded = false
-        }
-    }
 }

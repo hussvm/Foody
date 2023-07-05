@@ -289,7 +289,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2er-Tq-S1o"/>
-                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="767-MV-o4x" firstAttribute="top" secondItem="2er-Tq-S1o" secondAttribute="top" id="3hR-d9-zlw"/>
                             <constraint firstItem="767-MV-o4x" firstAttribute="trailing" secondItem="2er-Tq-S1o" secondAttribute="trailing" id="buO-LY-852"/>
@@ -324,7 +324,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="RFD-wJ-M0p">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RFD-wJ-M0p">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="596"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Cmb-zL-dGr">
@@ -369,7 +369,7 @@
                                             <constraint firstAttribute="height" constant="50" id="90K-kb-yiq"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLt-2R-f4q">
                                         <rect key="frame" x="0.0" y="140" width="361" height="50"/>
@@ -492,6 +492,7 @@
                 <tabBarController storyboardIdentifier="HomeNC" automaticallyAdjustsScrollViewInsets="NO" id="I2O-hV-buA" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lUJ-Jm-2Xn">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -503,7 +504,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EDl-FB-SNa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1606.8702290076335" y="41.549295774647888"/>
+            <point key="canvasLocation" x="1607" y="42"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="CL6-87-CCG">
@@ -628,29 +629,8 @@
                     <view key="view" contentMode="scaleToFill" id="gtx-gr-pAU">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aZ-uU-Llh">
-                                <rect key="frame" x="110" y="674.66666666666663" width="173" height="34.333333333333371"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Change Status"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="changeStatusClicked:" destination="3Yr-Vg-uHc" eventType="touchUpInside" id="hns-cw-bTy"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Rax-8e-Qgq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Rax-8e-Qgq" firstAttribute="bottom" secondItem="9aZ-uU-Llh" secondAttribute="bottom" constant="60" id="ISG-Kl-3Wn"/>
-                            <constraint firstItem="Rax-8e-Qgq" firstAttribute="trailing" secondItem="9aZ-uU-Llh" secondAttribute="trailing" constant="110" id="R1N-RE-HNf"/>
-                            <constraint firstItem="9aZ-uU-Llh" firstAttribute="leading" secondItem="Rax-8e-Qgq" secondAttribute="leading" constant="110" id="gZ3-vB-DZI"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Cqh-Mf-WOq"/>
                 </viewController>

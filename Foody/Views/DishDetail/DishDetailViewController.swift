@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DishDetailViewController: UIViewController {
+class DishDetailViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var dishImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
