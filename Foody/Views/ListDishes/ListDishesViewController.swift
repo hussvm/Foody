@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class ListDishesViewController: UIViewController {
     
@@ -23,7 +24,7 @@ class ListDishesViewController: UIViewController {
         
         title = category.name
         registerCells()
-        
+        ProgressHUD.show()
     }
     
     private func registerCells()

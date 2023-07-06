@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct NetworkService {
+/*struct NetworkService {
     
     static let shared = NetworkService()
     
@@ -114,3 +114,4 @@ struct NetworkService {
         return urlRequest
     }
 }
+*/

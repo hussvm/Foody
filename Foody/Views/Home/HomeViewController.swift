@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class HomeViewController: UIViewController {
     
@@ -37,6 +38,25 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCells()
+        
+       /* NetworkService.shared.fetchAllCatgories { [weak self]
+            Result in
+            switch Result{
+                
+            case .success(let allDishes):
+                ProgressHUD.dismiss()
+                self?.categories = allDishes.catgories ?? []
+                self?.populars = allDishes.populars ?? []
+                self?.specails = allDishes.specials ?? []
+                
+                self?.categoryCollectionView.reloadData()
+                self?.popularCollectionView.reloadData()
+                self?.popularCollectionView.reloadData()
+                
+            case .failure(let error):
+                ProgressHUD.showError(error.localizedDescription)
+            }
+        }*/
         
     }
     
