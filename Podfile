@@ -9,4 +9,14 @@ target 'Foody' do
     pod "Kingfisher"
     pod 'ProgressHUD'
     pod 'IQKeyboardManager'
+    pod 'SwipeCellKit'
+    pod 'SkeletonView'
+    pod 'FloatingPanel'
+    pod 'Instructions'
+    pod 'MessageKit'
+    pod 'SnapKit'
+    pod 'SwiftMessages'
+    pod 'UIView-Shimmer', '~> 1.0'
+    pod 'SwipeCellKit'
+
 end

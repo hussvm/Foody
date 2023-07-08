@@ -655,7 +655,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oRq-4K-8LK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2900" y="827"/>
+            <point key="canvasLocation" x="2900" y="870"/>
         </scene>
         <!--Settings-->
         <scene sceneID="AvF-EH-tro">
