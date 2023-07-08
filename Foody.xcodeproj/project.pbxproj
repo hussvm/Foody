@@ -203,6 +203,15 @@
 			path = MostOrderedCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		0496C6E52A59D79200EF71C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04B5105629E6662700D3F81E /* LaunchScreen.storyboard */,
+				04B5105429E6662700D3F81E /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		0498485E2A2DEA21004AD938 /* DishDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,8 +301,7 @@
 				04B5104829E6662500D3F81E /* AppDelegate.swift */,
 				04B5104A29E6662500D3F81E /* SceneDelegate.swift */,
 				04B5104E29E6662500D3F81E /* Main.storyboard */,
-				04B5105429E6662700D3F81E /* Assets.xcassets */,
-				04B5105629E6662700D3F81E /* LaunchScreen.storyboard */,
+				0496C6E52A59D79200EF71C9 /* Supporting Files */,
 				04B5105929E6662700D3F81E /* Info.plist */,
 				04B5105129E6662600D3F81E /* Foody.xcdatamodeld */,
 			);

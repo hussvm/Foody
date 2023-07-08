@@ -24,7 +24,7 @@ class ListDishesViewController: UIViewController {
         
         title = category.name
         registerCells()
-        ProgressHUD.show()
+//        ProgressHUD.show()
     }
     
     private func registerCells()

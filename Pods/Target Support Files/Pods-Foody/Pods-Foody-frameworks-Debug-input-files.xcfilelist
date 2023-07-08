@@ -1,13 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-Foody/Pods-Foody-frameworks.sh
-${BUILT_PRODUCTS_DIR}/FloatingPanel/FloatingPanel.framework
 ${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
-${BUILT_PRODUCTS_DIR}/InputBarAccessoryView/InputBarAccessoryView.framework
-${BUILT_PRODUCTS_DIR}/Instructions/Instructions.framework
 ${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
-${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework
 ${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework
-${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework
-${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
-${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework
-${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework
-${BUILT_PRODUCTS_DIR}/UIView-Shimmer/UIView_Shimmer.framework
