@@ -131,7 +131,7 @@
 				0498485E2A2DEA21004AD938 /* DishDetail */,
 				049A187A2A26267100E3554E /* Home */,
 				041113B429E77AB1004E2603 /* Onboarding */,
-				045480DD2A3D092D00552725 /* SettingsViewController.swift */,
+				04A956182A65803B001D0A84 /* Settings */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -245,6 +245,14 @@
 				04A84EB52A27278000F00F2E /* CategoryCollectionViewCell.xib */,
 			);
 			path = CategoryCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		04A956182A65803B001D0A84 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				045480DD2A3D092D00552725 /* SettingsViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		04B2D7452A30A58300EC32E6 /* TableViewCells */ = {
