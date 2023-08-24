@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -506,17 +507,32 @@
             </objects>
             <point key="canvasLocation" x="1891" y="18"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="SK8-jH-SOx">
             <objects>
-                <viewController id="i3c-eX-qNX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" id="i3c-eX-qNX" customClass="MapViewController" customModule="Foody" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xQd-cB-IoX">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hk-e6-FNh">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="phh-9J-zzy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="phh-9J-zzy" firstAttribute="trailing" secondItem="7hk-e6-FNh" secondAttribute="trailing" id="0BH-dH-Afy"/>
+                            <constraint firstItem="7hk-e6-FNh" firstAttribute="top" secondItem="phh-9J-zzy" secondAttribute="top" id="BiE-nr-JBR"/>
+                            <constraint firstItem="phh-9J-zzy" firstAttribute="bottom" secondItem="7hk-e6-FNh" secondAttribute="bottom" id="coW-iq-id2"/>
+                            <constraint firstItem="7hk-e6-FNh" firstAttribute="leading" secondItem="phh-9J-zzy" secondAttribute="leading" id="q4M-P5-hvd"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="axP-TC-3Wp"/>
+                    <connections>
+                        <outlet property="mapView" destination="7hk-e6-FNh" id="QMm-UJ-ZZg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qh0-pW-LtR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -599,8 +615,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="info.square.fill" catalog="system" id="uDh-zm-TKk">
-                                                    <rect key="frame" x="22.333333333333336" y="16.333333333333336" width="19.333333333333332" height="17.333333333333332"/>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="info.circle.fill" catalog="system" id="uDh-zm-TKk">
+                                                    <rect key="frame" x="22.166666666666668" y="15.666666666666664" width="19.666666666666664" height="19"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -736,7 +752,7 @@
         <image name="ellipsis.bubble.fill" catalog="system" width="128" height="110"/>
         <image name="gear" catalog="system" width="128" height="122"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
-        <image name="info.square.fill" catalog="system" width="128" height="114"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="123"/>
         <image name="map.fill" catalog="system" width="128" height="110"/>
         <image name="person.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
