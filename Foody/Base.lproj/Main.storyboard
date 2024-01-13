@@ -436,7 +436,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Stb-5Y-8IM"/>
-                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="y3V-Ld-rMK" firstAttribute="top" secondItem="Stb-5Y-8IM" secondAttribute="top" id="CmL-AQ-tVV"/>
                             <constraint firstItem="y3V-Ld-rMK" firstAttribute="leading" secondItem="Stb-5Y-8IM" secondAttribute="leading" id="YBd-6J-5QF"/>
@@ -452,7 +452,7 @@
             </objects>
             <point key="canvasLocation" x="6627" y="18"/>
         </scene>
-        <!--List Orders View Controller-->
+        <!-- -->
         <scene sceneID="9aA-mi-Ne8">
             <objects>
                 <viewController storyboardIdentifier="ListOrdersViewController" id="WZh-dc-Edc" customClass="ListOrdersViewController" customModule="Foody" customModuleProvider="target" sceneMemberID="viewController">
@@ -470,7 +470,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cDQ-um-sVP"/>
-                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="VLf-rQ-L1F" firstAttribute="trailing" secondItem="cDQ-um-sVP" secondAttribute="trailing" id="2EG-Np-Fbp"/>
                             <constraint firstItem="VLf-rQ-L1F" firstAttribute="top" secondItem="cDQ-um-sVP" secondAttribute="top" id="47B-lZ-p87"/>
@@ -478,7 +478,7 @@
                             <constraint firstItem="VLf-rQ-L1F" firstAttribute="leading" secondItem="cDQ-um-sVP" secondAttribute="leading" id="9qt-Gz-gZh"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hkS-j5-Nl8"/>
+                    <navigationItem key="navigationItem" title=" " id="hkS-j5-Nl8"/>
                     <connections>
                         <outlet property="tableView" destination="VLf-rQ-L1F" id="ugc-iL-Nm9"/>
                     </connections>
@@ -542,7 +542,7 @@
         <scene sceneID="Q34-a9-kg3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jxf-zs-vbx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="diw-dG-kq0"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.circle.fill" catalog="system" id="diw-dG-kq0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nlc-AX-ke5">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -751,7 +751,7 @@
         <image name="dollarsign.square.fill" catalog="system" width="128" height="114"/>
         <image name="ellipsis.bubble.fill" catalog="system" width="128" height="110"/>
         <image name="gear" catalog="system" width="128" height="122"/>
-        <image name="homekit" catalog="system" width="128" height="104"/>
+        <image name="house.circle.fill" catalog="system" width="128" height="123"/>
         <image name="info.circle.fill" catalog="system" width="128" height="123"/>
         <image name="map.fill" catalog="system" width="128" height="110"/>
         <image name="person.circle.fill" catalog="system" width="128" height="123"/>
