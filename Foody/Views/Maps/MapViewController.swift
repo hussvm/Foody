@@ -12,13 +12,16 @@ import CoreLocation
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate{
     
     @IBOutlet weak var mapView: MKMapView!
-    var LocationManager = CLLocationManager()
+    
+    var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         
+        super.viewDidLoad()
         mapView.delegate = self
-        LocationManager.delegate = self
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
     }
-    
 }
